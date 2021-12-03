@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Landing Page</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="headmid">
+                <h1 id="headtitle">tanah air</h1>
+            </div>
+        </div>
+    </header>
+    <div class="bg">
+    <div class="top-wrapper">
+        <div class="container">
+            <h1>Kerajaan Demak</h1>
+            <h1>Pelajari lebih mudah lewat Tanah Air.</h1>
+            <p>Tanah Air adalah platform online untuk mempelajari sejarah demak</p>
+            <p>Kami menawarkan lingkungan pembelajaran sejarah demak secara lengkap untuk membantu  anda dalam belajar</p>
+            <div class="btn-wrapper">
+            
+                <button id="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+              
+                <div id="id01" class="smart">
+      
+                  <form name="formInputLogin"  class="smart-content animate" action="./home.html" method="post" onsubmit="return validateForm(this);">
+                    <div class="clscontainer">
+                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close ">&times;</span>
+                      
+                    </div>
+                
+                    <div class="container1">
+                      <label for="email"><b>Email</b></label>
+                      <input type="text" name="email" required placeholder="Email" id="email" class="input">
+    
+                      <label for="psw"><b>Password</b>
+                      <input type="password" name="password" required placeholder="Password" id="pass1" class="input">
+                      <i class="show fa fa-eye"></i>
+                      <i class="hide fa fa-eye-slash"></i></label>
+    
+                      <button class="lg-button" type="submit"  >Login</button>
+    
+                    </div>
+                  </form>
+                </div>
+    
+    
+                <button id="daftar" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Daftar</button>
+                <div id="id02" class="smart">
+      
+                  <form name="formInputLogin"  class="smart-content animate" action="./index.html" method="post" onsubmit="return validateContact(this);">
+                    <div class="clscontainer">
+                      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close ">&times;</span>
+                      
+                    </div>
+                
+                    <div class="container1">
+                      <label for="name"><b>Name</b></label>
+                      <input type="text" name="name" required placeholder="Name" id="name" class="input">
+                      
+                      <label for="email"><b>Email</b></label>
+                      <input type="text" name="email" required placeholder="Email" id="email" class="input">
+    
+                      <label for="psw"><b>Password</b>
+                        <input type="password" name="password" required placeholder="Password" id="pass1" class="input"><br>
+                        
+                      <i class="show1 fa fa-eye"></i>
+                      <i class="hide1 fa fa-eye-slash"></i></label>
+                     
+                      <label for="re-psw"><b>Re-type Password</b>
+                      <input type="password" name="confPassword" required placeholder="Confirm Password" class="input" id="pass2" onkeyup="checkPass();">
+                      <i class="show2 fa fa-eye"></i>
+                      <i class="hide2 fa fa-eye-slash"></i></label>
+    
+                      <button class="df-button" type="submit">Daftar</button>
+    
+                    </div>
+              </div></div>
+            </div></div></div>
+</body>
+</html>

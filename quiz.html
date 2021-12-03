@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+</head>
+<body onload="showQuiz()">
+    <header id="header-quiz">
+        <div class="container">
+            <div class="ch headmid">
+                <h1 id="quizheadtitle">tanah air</h1>
+            </div>
+            <div class="user-quiz">
+                <div class="dropdown">
+                    <a class="dropbtn" id="prof"><i class="profile fa fa-user-circle" style="font-size:24px"> </i>User (Lvl.1) </a>
+                    <div class="dropdown-content" id="drop-content-quiz">
+                        <a href="#">Setting</a>
+                        <a href="#">Help</a>
+                        <a href="index.html">Logout</a>
+                      </div>
+            </div>
+        </div>
+    </header>
+    <div class="quiz-body">
+        <img id="quiz-background" src="https://image.freepik.com/free-vector/elegant-background-with-decorative-frame_1048-6072.jpg" alt="">
+        <div class="quiz-text">
+            <a>Raden Patah adalah pendiri Kerajaan Demak,</a> 
+            <br>
+            <a>Sehingga ia menjadi Raja pertama dalam serjarah Demak</a> 
+            <br><br>
+            <a>Dari narasi diatas, yang manakah gambar dibawah ini</a> 
+            <br>
+            <a>yang merupakan Raden Patah</a> 
+            <div class="answer-container">
+                <div class="answer-a">
+                    <a>A.</a>
+                    <img src="http://4.bp.blogspot.com/-Gi4xqDJAaOw/U3IkwZlVFAI/AAAAAAAAACw/6D3PzGLyO_c/s1600/radenpatah.jpg" alt="" onclick="plusQuiz(1)">
+                </div>
+                <div class="answer-b">
+                    <a>B.</a>
+                    <img id="answer-b-image" src="https://3.bp.blogspot.com/-FxbYKXQyrGU/WODSbCPozOI/AAAAAAAAC4k/8I0VOhgQUkIlX-Z-Y6bK1PCZZiAWbr0QwCLcB/s1600/sultan%2Btrenggono.jpg" alt="" onclick="changeImage('answer-b-image','/Assets/Foto/Wrong.png')">
+                </div>
+                <div class="answer-c">
+                    <a>C.</a>
+                    <img id="answer-c-image"src="http://photos.geni.com/p13/5a/32/b8/d8/534448391ad91f65/patiunus_large.jpg" alt="" onclick="changeImage('answer-c-image','/Assets/Foto/Wrong.png')">
+                </div>
+                <div class="answer-d">
+                    <a>D.</a>
+                    <img id="answer-d-image" src="https://pbs.twimg.com/media/ERwg1tKUwAAOMgn.jpg" alt="" onclick="changeImage('answer-d-image','/Assets/Foto/Wrong.png')">
+                </div>
+            </div>
+        </div>   
+</div>
+    <div class="quiz-body">
+            <img id="quiz-background" src="https://image.freepik.com/free-vector/elegant-background-with-decorative-frame_1048-6072.jpg" alt="">
+            <div class="quiz-text">
+                <a id="quiz-question-2">Kapan Kerajaan Demak Berdiri?</a> 
+                <div class="answer-container">
+                    <div class="answer-text-a">
+                        <a id="quiz-option">A.</a>
+                        <a id="quiz-text-answer">1478</a>
+                    </div>
+                    <div class="answer-text-b">
+                        <a id="quiz-option">B.</a>
+                        <a id="quiz-text-answer">1481</a>
+                    </div>
+                    <div class="answer-text-c">
+                        <a id="quiz-option">C.</a>
+                        <a id="quiz-text-answer">1518</a>
+                    </div>
+                    <div class="answer-text-d">
+                        <a id="quiz-option">D.</a>
+                        <a id="quiz-text-answer">1581</a>
+                    </div>
+                </div>
+            </div>   
+    </div>
+   
+</body>
+</html>
